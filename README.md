@@ -73,7 +73,7 @@ By analyzing passenger data, airlines can:
 ### Preprocessing Steps
 
 * Label encoding for categorical features
-* One-hot encoding via `get\\\_dummies`
+* One-hot encoding via `get_dummies`
 * Encoded target variable (Satisfied / Neutral-Dissatisfied)
 * Split dataset: 80% training, 20% testing
 
@@ -89,13 +89,13 @@ Classify passengers as **Satisfied** or **Neutral/Dissatisfied** based on their 
 
 | Model | Strengths | Weaknesses | Test Accuracy |
 |--------|------------|-------------|---------------|
-| \*\*Logistic Regression\*\* | Simple, fast, interpretable | Sensitive to outliers | 0.7847 |
-| \*\*Decision Tree\*\* | Handles mixed data, easy to visualize | Can overfit if unpruned | 0.9478 |
-| \*\*Tuned Decision Tree (GridSearchCV)\*\* | Stable performance, optimized `max\\\_depth=11`, `max\\\_leaf\\\_nodes=49` | Slightly less interpretable | \*\*0.9408\*\* |
+| Logistic Regression | Simple, fast, interpretable | Sensitive to outliers | 0.7847 |
+| Decision Tree | Handles mixed data, easy to visualize | Can overfit if unpruned | 0.9478 |
+| Tuned Decision Tree (GridSearchCV) | Stable performance, optimized `max_depth=11`, `max_leaf_nodes=49` | Slightly less interpretable | 0.9408 |
 
 ### Cross-Validation
 
-* 10-fold CV with `random\\\_state=0`
+* 10-fold CV with `random\_state=0`
 * Mean accuracy: **0.948 ± 0.01**
 * Very low variance → strong generalization, no overfitting
 
@@ -145,10 +145,10 @@ Classify passengers as **Satisfied** or **Neutral/Dissatisfied** based on their 
 
 | Principle | Description |
 |------------|--------------|
-| \*\*Fairness\*\* | Regular audits to avoid bias by gender, class, or loyalty status |
-| \*\*Privacy\*\* | Encrypt data; comply with GDPR, CCPA, and airline standards |
-| \*\*Transparency\*\* | Use interpretable models and explain decision factors |
-| \*\*Human Oversight\*\* | Predictions support — not replace — human judgment |
+| Fairness | Regular audits to avoid bias by gender, class, or loyalty status |
+| Privacy | Encrypt data; comply with GDPR, CCPA, and airline standards |
+| Transparency | Use interpretable models and explain decision factors |
+| Human Oversight | Predictions support — not replace — human judgment |
 
 ---
 
